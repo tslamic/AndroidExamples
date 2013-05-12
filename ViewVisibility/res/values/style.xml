@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WickedFontStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dip</item>
+        <item name="android:layout_margin">2dip</item>
+
+    </style>
+
+    <style name="WickedFontRedBorderStyle" parent="WickedFontStyle">
+        <item name="android:background">@drawable/border_red</item>
+    </style>
+
+    <style name="WickedButtonStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="black">#000000</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidScreens</string>
+    <string-array name="questions">
+        <item>Who was the ruler of the USSR from 1917-1922?</item>
+        <item>In which year did the UK hand over Hong Kong sovereignty to China?</item>
+        <item>Who invented the thermometer in 1593?</item>
+        <item>In which year did the Titanic sink?</item>
+        <item>What Apollo 13 astronaut contacted Mission Control with the words, \"Houston, we have a problem\"?</item>
+        <item>In which year did the demolition of the Berlin Wall begin?</item>
+        <item>What cocktail, named in Cuban Spanish, comprises white rum, lime/lemon, sugar and mint?</item>
+        <item>What smartphone operating system increased its market share from 4\%% in 2009 to 70\%% in 2013?</item>
+    </string-array>
+    <string-array name="answers">
+        <item>Vladimir Lenin</item>
+        <item>1997</item>
+        <item>Galileo Galilei</item>
+        <item>1912</item>
+        <item>Jack Swigert</item>
+        <item>1989</item>
+        <item>Mojito</item>
+        <item>Android</item>
+    </string-array>
+</resources>

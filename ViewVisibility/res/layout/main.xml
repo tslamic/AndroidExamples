@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView
+            style="@style/WickedFontStyle"
+            android:text="Observe the SECOND box"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dip"
+            android:background="@drawable/border_green">
+
+        <TextView
+                style="@style/WickedFontRedBorderStyle"
+                android:text="FIRST"
+                android:id="@+id/fst"/>
+
+        <TextView
+                style="@style/WickedFontRedBorderStyle"
+                android:text="SECOND"
+                android:id="@+id/snd"/>
+
+        <TextView
+                style="@style/WickedFontRedBorderStyle"
+                android:text="THIRD"
+                android:id="@+id/trd"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3"
+            android:id="@+id/linearLayout">
+
+        <Button
+                style="@style/WickedButtonStyle"
+                android:text="VISIBLE"
+                android:onClick="onVisible"
+                android:id="@+id/button"/>
+
+        <Button
+                style="@style/WickedButtonStyle"
+                android:text="INVISIBLE"
+                android:onClick="onInvisible"
+                android:id="@+id/button1"/>
+
+        <Button
+                style="@style/WickedButtonStyle"
+                android:text="GONE"
+                android:onClick="onGone"
+                android:id="@+id/button2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

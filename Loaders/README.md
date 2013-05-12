@@ -1,0 +1,1 @@
+This is a simple example on how to use Loaders framework.
