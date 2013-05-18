@@ -5,7 +5,7 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.tslamic.loader.LoaderActivity;
+import com.tslamic.loader.generic.LoaderActivity;
 import com.tslamic.loader.R;
 
 import java.util.ArrayList;

@@ -3,22 +3,30 @@ package com.tslamic.loader.json;
 import android.content.Context;
 import android.database.Cursor;
 import android.support.v4.content.AsyncTaskLoader;
-import com.tslamic.loader.DummyContentProvider;
-import com.tslamic.loader.DummyDatabase;
+import com.tslamic.loader.content.DummyContentProvider;
+import com.tslamic.loader.content.DummyDatabase;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
+// This loader extracts an Integer value from JSON saved in the database.
+// Follow the comments in the code to get the feel of what's happening.
+// Also, make sure to understand this: http://www.androiddesignpatterns.com/2012/08/implementing-loaders.html
+
 public class IntegerLoader extends AsyncTaskLoader<List<Integer>> {
 
-    private static final String[] PROJECTION = new String[]{DummyDatabase.DB_JSON};
+    private static final String[] PROJECTION = new String[]{DummyDatabase.Field.JSON};
     private static final int DEFAULT_INTEGER = -1;
 
+    // This is our observer which will be listening for changes.
     private final ForceLoadContentObserver mObserver;
+
+    // This is the current data in this Loader.
     private List<Integer> mData;
 
+    // Constructor.
     public IntegerLoader(final Context context) {
         super(context);
         mObserver = new ForceLoadContentObserver();
@@ -26,18 +34,16 @@ public class IntegerLoader extends AsyncTaskLoader<List<Integer>> {
 
     @Override
     public List<Integer> loadInBackground() {
-        final List<Integer> list = getEmptyList();
         Cursor cursor = null;
-
         try {
-            cursor = getContext().getContentResolver()
-                    .query(DummyContentProvider.URI_JSON, PROJECTION, null, null, null);
-            list.addAll(parseJsonFromCursor(cursor));
+            // First, we need to get the data form our database. We do this by querying our ContentResolver.
+            // Note that our custom DummyContentProvider must be registered in the manifest.
+            cursor = getContext().getContentResolver().query(DummyContentProvider.URI_JSON, PROJECTION, null, null,
+                                                             null);
+            return getIntegersFromCursor(cursor);
         } finally {
-            if (null != cursor) cursor.close();
+            if (null != cursor) cursor.close(); // Never forget to close the cursor.
         }
-
-        return list;
     }
 
     @Override
@@ -60,7 +66,7 @@ public class IntegerLoader extends AsyncTaskLoader<List<Integer>> {
             deliverResult(mData);
         }
 
-        getContext().getContentResolver().registerContentObserver(DummyContentProvider.URI_ITEM, false, mObserver);
+        getContext().getContentResolver().registerContentObserver(DummyContentProvider.URI_ITEM, true, mObserver);
 
         if (takeContentChanged() || null == mData) {
             forceLoad();
@@ -85,13 +91,18 @@ public class IntegerLoader extends AsyncTaskLoader<List<Integer>> {
         mData = null;
     }
 
-    private static List<Integer> parseJsonFromCursor(final Cursor cursor) {
-        final List<Integer> list = getEmptyList();
+    private static List<Integer> getIntegersFromCursor(final Cursor cursor) {
+        final List<Integer> list = new ArrayList<Integer>();
 
+        // Let's make sure our cursor actually contains any interesting data. If it doesn't, we'll just
+        // return the empty list we prepared above.
         if (null == cursor || 0 == cursor.getCount()) {
             return list;
         }
 
+        // So it looks like we've got something in the cursor. We should iterate through and extract the integers.
+        // Remember, what we're getting from the cursor is the JSON value, so we need to parse it. Something may
+        // go wrong during that time, so if an exception is triggered, we'll just return the default integer.
         while (cursor.moveToNext()) {
             try {
                 JSONObject jsonObject = new JSONObject(cursor.getString(0));
@@ -102,10 +113,6 @@ public class IntegerLoader extends AsyncTaskLoader<List<Integer>> {
         }
 
         return list;
-    }
-
-    private static List<Integer> getEmptyList() {
-        return new ArrayList<Integer>();
     }
 
 }

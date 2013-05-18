@@ -4,24 +4,22 @@
           android:versionCode="1"
           android:versionName="1.0">
 
-    <uses-sdk android:minSdkVersion="8"/>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
 
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
 
-        <activity android:name=".cursor.CursorLoaderActivity"
-                  android:label="@string/app_name">
-
-        </activity>
-
-        <activity android:name=".json.JsonLoaderActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <provider android:name=".DummyContentProvider"
-                  android:authorities="com.tslamic.loader.LoaderFramework.provider"
+        <activity android:name=".cursor.CursorLoaderActivity"/>
+        <activity android:name=".json.JsonLoaderActivity"/>
+
+        <provider android:name=".content.DummyContentProvider"
+                  android:authorities="com.tslamic.loader.provider"
                   android:exported="false"/>
 
     </application>

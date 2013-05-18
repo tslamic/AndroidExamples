@@ -1,12 +1,13 @@
 package com.tslamic.androidscreens;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 
-public class AndroidScreensActivity extends Activity implements QuestionListener {
+public class AndroidScreensActivity extends FragmentActivity implements QuestionListener {
 
-    private QuestionsFragment questionsFragment;
+    private QuestionFragment questionsFragment;
     private AnswersFragment answersFragment;
 
     @Override
@@ -14,14 +15,16 @@ public class AndroidScreensActivity extends Activity implements QuestionListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        final FragmentManager manager = getSupportFragmentManager();
+
         // Retrieve Fragments (it's not guaranteed they exist)
-        questionsFragment = (QuestionsFragment) getFragmentManager().findFragmentById(R.id.questions);
-        answersFragment = (AnswersFragment) getFragmentManager().findFragmentById(R.id.answers);
+        questionsFragment = (QuestionFragment) manager.findFragmentById(R.id.questions);
+        answersFragment = (AnswersFragment) manager.findFragmentById(R.id.answers);
 
         // Add Questions
         if (null == questionsFragment) {
-            questionsFragment = new QuestionsFragment();
-            getFragmentManager().beginTransaction().add(R.id.questions, questionsFragment).commit();
+            questionsFragment = new QuestionFragment();
+            manager.beginTransaction().add(R.id.questions, questionsFragment).commit();
         }
 
         // This checks if a container for answers is available. If it is, it means we're using layout-large-land
@@ -29,7 +32,7 @@ public class AndroidScreensActivity extends Activity implements QuestionListener
         final boolean shouldDisplayAnswers = (null != findViewById(R.id.answers));
         if (shouldDisplayAnswers && null == answersFragment) {
             answersFragment = new AnswersFragment();
-            getFragmentManager().beginTransaction().add(R.id.answers, answersFragment).commit();
+            manager.beginTransaction().add(R.id.answers, answersFragment).commit();
         }
     }
 

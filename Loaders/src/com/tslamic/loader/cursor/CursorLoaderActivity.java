@@ -7,14 +7,14 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.widget.ListView;
-import com.tslamic.loader.DummyContentProvider;
-import com.tslamic.loader.DummyDatabase;
-import com.tslamic.loader.LoaderActivity;
+import com.tslamic.loader.content.DummyContentProvider;
+import com.tslamic.loader.content.DummyDatabase;
+import com.tslamic.loader.generic.LoaderActivity;
 import com.tslamic.loader.R;
 
 public class CursorLoaderActivity extends LoaderActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    private static final String[] DB_FIELDS = new String[]{DummyDatabase.DB_INFO, DummyDatabase.DB_JSON};
+    private static final String[] DB_FIELDS = new String[]{DummyDatabase.Field.INFO, DummyDatabase.Field.JSON};
     private static final int[] RESOURCE_FIELDS = {R.id.listItemTitle, R.id.listItemJson};
 
     private SimpleCursorAdapter mAdapter;
