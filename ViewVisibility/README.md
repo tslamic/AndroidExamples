@@ -52,4 +52,4 @@ Conclusion
 - `View.INVISIBLE` hides the View but you can still see the void where the hidden View should be.
 - `View.GONE` makes the View completely hidden just like it wouldn't exist.
 
-Go on and try the app if you don't believe me! :-)
+Go on and try the app if you don't believe me!

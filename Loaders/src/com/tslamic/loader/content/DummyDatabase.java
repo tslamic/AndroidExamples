@@ -10,8 +10,10 @@ import java.util.Random;
 public class DummyDatabase extends SQLiteOpenHelper {
 
     private static final Random RANDOM = new Random();
+
     private static final String DB_NAME = "dummy.db";
     private static final int DB_VERSION = 1;
+
     private static final String[] RANDOM_STRINGS = {
             "Teleporters are the machines of the evasive honor",
             "The kingdom is full of booda-hood ",
@@ -27,8 +29,7 @@ public class DummyDatabase extends SQLiteOpenHelper {
         public static final String INFO = "info";
         public static final String JSON = "json";
 
-        // Instantiation disabled.
-        private Field() { throw new AssertionError(); }
+        private Field() { throw new AssertionError(); } // Instantiation disabled.
 
     }
 
@@ -85,7 +86,6 @@ public class DummyDatabase extends SQLiteOpenHelper {
     private static String generateJsonValue() {
         final int random = RANDOM.nextInt();
         return String.format("{ \"%s\":\"%d\" }", "integer", random);
-        //return String.format("\"%s\":%d", "integer", random);
     }
 
     @Override
@@ -99,11 +99,5 @@ public class DummyDatabase extends SQLiteOpenHelper {
         db.execSQL(dropCommand);
         onCreate(db);
     }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        throw new CloneNotSupportedException();
-    }
-
 
 }

@@ -34,14 +34,13 @@ public class DummyContentProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         final int match = URI_MATCHER.match(uri);
-
         if (ITEM_ID == match || JSON_ID == match) {
             selection = appendWhereIfNecessary(uri, selection);
         }
 
         final SQLiteDatabase db = mDatabase.getReadableDatabase();
         final Cursor cursor = db.query(DummyDatabase.Field.TABLE_NAME, projection, selection, selectionArgs, null,
-                null, sortOrder);
+                                       null, sortOrder);
 
         cursor.setNotificationUri(getContext().getContentResolver(), uri);
         return cursor;
@@ -56,7 +55,7 @@ public class DummyContentProvider extends ContentProvider {
             case ITEM_ID:
                 return "vnd.android.cursor.item/" + AUTHORITY + "/item";
             default:
-                throw new IllegalArgumentException("Uri not recognized: " + uri);
+                return null;
         }
     }
 
