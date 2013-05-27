@@ -6,3 +6,12 @@ and [Otto](http://square.github.io/otto/) event bus. You are able to provide URL
 
 Available for API 8+.
 
+Note
+---
+
+There are some problems with focus when trying to add args or JSON parameters. Seems like [others](http://stackoverflow.com/questions/3468765/buggy-listview-makes-me-sad)
+have stumbled upon such problems too:
+
+> It sounds like ListViews aren't able to handle EditTexts well. I've done some research and the consensus seems to be "don't do that."
+
+I'll try to make it work, please bear with me until then.
