@@ -64,18 +64,12 @@ public class ParamAdapter extends BaseAdapter {
         return view;
     }
 
-    @Override
-    public void notifyDataSetChanged() {
-        super.notifyDataSetChanged();
-        System.out.println(mData.toString());
-    }
-
-    public void addEmpty() {
+    public void addEmptyParam() {
         mData.add(new Param());
     }
 
     public List<Param> getAll() {
-        return mData;
+        return mData; // Non-defensive, but hey, it's just an example.
     }
 
     private class ParamHolder {
@@ -85,7 +79,7 @@ public class ParamAdapter extends BaseAdapter {
         public final ImageButton delete;
         public int currentPosition;
 
-        public ParamHolder(View view) {
+        public ParamHolder(final View view) {
             key = (EditText) view.findViewById(R.id.param_key);
             key.addTextChangedListener(new AbstractParamWatcher() {
                 @Override

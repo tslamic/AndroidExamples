@@ -38,7 +38,7 @@ class ParamFragment extends ListFragment {
         view.findViewById(R.id.param_new).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mParamAdapter.addEmpty();
+                mParamAdapter.addEmptyParam();
                 mParamAdapter.notifyDataSetChanged();
             }
         });

@@ -27,7 +27,7 @@ public final class Web {
     }
 
     // Execute a request with Volley.
-    public static void exec(Request<?> request) {
+    public static void exec(final Request<?> request) {
         sRequestQueue.add(request);
     }
 
@@ -54,7 +54,7 @@ public final class Web {
         EXECUTOR_SERVICE.execute(sFutureJson);
     }
 
-    private static <T> T get(FutureTask<T> task, T defaultValue) {
+    private static <T> T get(final FutureTask<T> task, final T defaultValue) {
         try {
             return task.get();
         } catch (Exception e) {
