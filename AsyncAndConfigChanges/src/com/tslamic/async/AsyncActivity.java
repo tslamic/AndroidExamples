@@ -13,6 +13,7 @@ public class AsyncActivity extends FragmentActivity implements DownloadFragment.
     private static final String UPDATE_STRING = "%d%% downloaded";
     private static final String BUNDLE_KEY_MESSAGE = "msg";
     private static final String BUNDLE_KEY_BUTTON = "btn";
+
     private ProgressBar mProgress;
     private TextView mMessage;
     private Button mButton;

@@ -1,10 +1,12 @@
 package com.tslamic.httpbinvolley.otto;
 
+import com.squareup.otto.Bus;
+
 public class BusProvider {
 
-    private static final AndroidBus BUS = new AndroidBus();
+    private static final Bus BUS = new Bus();
 
-    public static AndroidBus getInstance() {
+    public static Bus getInstance() {
         return BUS;
     }
 

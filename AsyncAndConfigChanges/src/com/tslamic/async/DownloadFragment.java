@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 public class DownloadFragment extends Fragment {
 
     public static final String TAG = "DownloadFragment";
+
     private Callback<Void> mCallback;
     private DownloadTask mTask;
     private boolean mIsRunning;

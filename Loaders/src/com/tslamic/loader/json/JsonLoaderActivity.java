@@ -5,8 +5,8 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.tslamic.loader.generic.LoaderActivity;
 import com.tslamic.loader.R;
+import com.tslamic.loader.generic.LoaderActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +14,15 @@ import java.util.List;
 public class JsonLoaderActivity extends LoaderActivity implements LoaderManager.LoaderCallbacks<List<Integer>> {
 
     private ArrayAdapter<Integer> mAdapter;
-    private List<Integer> list;
+    private List<Integer> mList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
 
-        list = new ArrayList<Integer>();
-        mAdapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_list_item_1, list);
+        mList = new ArrayList<Integer>();
+        mAdapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_list_item_1, mList);
         final ListView list = (ListView) findViewById(R.id.list);
         list.setAdapter(mAdapter);
 
@@ -36,15 +36,15 @@ public class JsonLoaderActivity extends LoaderActivity implements LoaderManager.
 
     @Override
     public void onLoadFinished(Loader<List<Integer>> listLoader, List<Integer> integers) {
-        list.clear();
-        list.addAll(integers);
+        mList.clear();
+        mList.addAll(integers);
 
         mAdapter.notifyDataSetChanged();
     }
 
     @Override
     public void onLoaderReset(Loader<List<Integer>> listLoader) {
-        list.clear();
+        mList.clear();
         mAdapter.notifyDataSetChanged();
     }
 

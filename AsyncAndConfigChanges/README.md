@@ -1,5 +1,5 @@
 Configuration changes and AsyncTasks
 ===
 
-This is a simple example on how to correctly retain an AsyncTask during configuration changes.
+This example shows how to correctly retain an AsyncTask during configuration change. Inspired by this [blog post](http://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html).
 
