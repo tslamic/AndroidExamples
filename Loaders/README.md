@@ -6,3 +6,5 @@ from the database.
 
 For a proper introduction, I recommend the following article:
 [implementing Loaders by Alex Lockwood](http://www.androiddesignpatterns.com/2012/08/implementing-loaders.html)
+
+![Loaders](http://i.imgur.com/iIyJZmj.png)

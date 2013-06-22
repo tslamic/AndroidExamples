@@ -13,3 +13,5 @@ have stumbled upon such problems too:
 > It sounds like ListViews aren't able to handle EditTexts well. I've done some research and the consensus seems to be "don't do that."
 
 I'll try to make it work, please bear with me until then.
+
+![HttpBinVolley](http://i.imgur.com/TYHJw2t.png)
