@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.*;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 public class MainActivity extends FragmentActivity implements ListView.OnItemClickListener {
 
