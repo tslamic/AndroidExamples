@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:background="#C44D58"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/linearLayout">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView"
+                android:layout_gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:textSize="20sp"/>
+
+        <ImageButton
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@null"
+                android:onClick="onShowSettings"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu_preferences"/>
+
+    </LinearLayout>
+
+    <com.tslamic.unitcircle.UnitCircleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/unitCircle"/>
+</LinearLayout>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Unit Circle Settings">
+        <CheckBoxPreference
+                android:title="Show Sine"
+                android:key="showSin"
+                android:defaultValue="true"
+                android:summary="Display sine function in unit circle."/>
+        <CheckBoxPreference
+                android:title="Show Cosine"
+                android:key="showCos"
+                android:defaultValue="true"
+                android:summary="Display cosine function in unit circle."/>
+        <ListPreference
+                android:title="Angular Measure Unit"
+                android:key="angle"
+                android:defaultValue="1"
+                android:summary="Choose the desired angular unit."
+                android:entries="@array/angleUnitEntries"
+                android:entryValues="@array/angleUnitValues"/>
+    </PreferenceCategory>
+</PreferenceScreen>

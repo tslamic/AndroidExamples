@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UnitCircle</string>
+
+    <string name="rad">Radians</string>
+    <string name="deg">Degrees</string>
+
+    <string-array name="angleUnitEntries">
+        <item>@string/rad</item>
+        <item>@string/deg</item>
+    </string-array>
+
+    <string-array name="angleUnitValues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>
