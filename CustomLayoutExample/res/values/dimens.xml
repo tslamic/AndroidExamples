@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cascade_horizontal_spacing">15dp</dimen>
+    <dimen name="cascade_vertical_spacing">10dp</dimen>
+    <dimen name="example_width">100dp</dimen>
+    <dimen name="example_height">150dp</dimen>
+</resources>
