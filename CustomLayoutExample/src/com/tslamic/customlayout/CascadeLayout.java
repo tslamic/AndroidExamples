@@ -35,8 +35,8 @@ public class CascadeLayout extends ViewGroup {
             try {
                 mHorizontalSpacing = array.getDimensionPixelSize(R.styleable.CascadeLayout_cascade_horizontal_spacing,
                                                                  mHorizontalSpacing);
-                mVerticalSpacing = array
-                        .getDimensionPixelSize(R.styleable.CascadeLayout_cascade_vertical_spacing, mVerticalSpacing);
+                mVerticalSpacing = array.getDimensionPixelSize(R.styleable.CascadeLayout_cascade_vertical_spacing,
+                                                               mVerticalSpacing);
             } finally {
                 array.recycle();
             }
@@ -90,7 +90,6 @@ public class CascadeLayout extends ViewGroup {
                 final LayoutParams params = (LayoutParams) child.getLayoutParams();
                 child.layout(params.x, params.y, params.x + child.getMeasuredWidth(),
                              params.y + child.getMeasuredHeight());
-
             }
         }
     }
