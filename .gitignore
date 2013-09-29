@@ -26,3 +26,6 @@ local.properties
 
 # Proguard
 proguard-project.txt
+
+# Traein project; will eventually be moved in its own dir.
+Traein/
