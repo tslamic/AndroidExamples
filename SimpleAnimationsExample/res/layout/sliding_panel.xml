@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle"
+            android:layout_alignParentBottom="true"
+            android:onClick="onToggle"
+            android:id="@+id/button"/>
+
+    <com.tslamic.simpleanimations.SlidingPanel
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/panel"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/button">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:text="HELLOOO! I AM LINDSEY LOHAN!"/>
+
+    </com.tslamic.simpleanimations.SlidingPanel>
+
+</RelativeLayout>
