@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/layout_padding">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_medium"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/station_data_list_item_title"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/station_data_list_item_description"/>
+</LinearLayout>

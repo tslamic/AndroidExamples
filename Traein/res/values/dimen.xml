@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_padding">8dp</dimen>
+    <dimen name="default_padding">4dp</dimen>
+    <dimen name="text_big">22sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+
+</resources>

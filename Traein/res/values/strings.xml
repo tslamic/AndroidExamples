@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Traein</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty">EMPTY</string>
+
+    <string name="public_board">Public Board</string>
+    <string name="live_feed">Live Feed</string>
+    <string name="station">Station</string>
+    <string name="favorites">Favorites</string>
+    <string name="stations">Stations</string>
+    <string name="station_name_hint">Station Name</string>
+    <string name="station_empty">No trains at this station</string>
+    <string name="stations_all">All</string>
+    <string name="stations_mainline">Mainline</string>
+    <string name="stations_dart">DART</string>
+    <string name="stations_suburban">Suburban</string>
+
+</resources>

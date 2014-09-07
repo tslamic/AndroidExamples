@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="stations">
+        <item>Adamstown</item>
+        <item>Ardrahan</item>
+        <item>Arklow</item>
+        <item>Ashtown</item>
+        <item>Athenry</item>
+        <item>Athlone</item>
+        <item>Athy</item>
+        <item>Attymon</item>
+        <item>Balbriggan</item>
+        <item>Ballina</item>
+        <item>Ballinasloe</item>
+        <item>Ballybrophy</item>
+        <item>Ballycullane</item>
+        <item>Ballyhaunis</item>
+        <item>Ballymote</item>
+        <item>Banteer</item>
+        <item>Bayside</item>
+        <item>Belfast Central</item>
+        <item>Birdhill</item>
+        <item>Blackrock</item>
+        <item>Booterstown</item>
+        <item>Boyle</item>
+        <item>Bray</item>
+        <item>Bridgetown</item>
+        <item>Broombridge</item>
+        <item>Cahir</item>
+        <item>Campile</item>
+        <item>Carlow</item>
+        <item>Carrick on Shannon</item>
+        <item>Carrick on Suir</item>
+        <item>Carrigaloe</item>
+        <item>Carrigtwohill</item>
+        <item>Castlebar</item>
+        <item>Castleconnell</item>
+        <item>Castleknock</item>
+        <item>Castlerea</item>
+        <item>Charleville</item>
+        <item>Cherry Orchard</item>
+        <item>Clara</item>
+        <item>Claremorris</item>
+        <item>Clondalkin</item>
+        <item>Clondalkin</item>
+        <item>Clongriffin</item>
+        <item>Clonmel</item>
+        <item>Clonsilla</item>
+        <item>Clontarf Road</item>
+        <item>Cloughjordan</item>
+        <item>Cobh</item>
+        <item>Collooney</item>
+        <item>Coolmine</item>
+        <item>Cork</item>
+        <item>Craughwell</item>
+        <item>Curragh</item>
+        <item>Dalkey</item>
+        <item>Docklands</item>
+        <item>Donabate</item>
+        <item>Drogheda</item>
+        <item>Dromod</item>
+        <item>Drumcondra</item>
+        <item>Dublin Connolly</item>
+        <item>Dublin Heuston</item>
+        <item>Dublin Pearse</item>
+        <item>Dun Laoghaire</item>
+        <item>Dunboyne</item>
+        <item>Dundalk</item>
+        <item>Edgeworthstown</item>
+        <item>Enfield</item>
+        <item>Ennis</item>
+        <item>Enniscorthy</item>
+        <item>Farranfore</item>
+        <item>Fota</item>
+        <item>Foxford</item>
+        <item>Galway</item>
+        <item>Glenageary</item>
+        <item>Glounthaune</item>
+        <item>Gorey</item>
+        <item>Gormanston</item>
+        <item>Gort</item>
+        <item>Grand Canal Dock</item>
+        <item>Greystones</item>
+        <item>Hansfield</item>
+        <item>Harmonstown</item>
+        <item>Hazelhatch</item>
+        <item>Hazelhatch</item>
+        <item>Howth</item>
+        <item>Howth Junction</item>
+        <item>Kilbarrack</item>
+        <item>Kilcock</item>
+        <item>Kilcoole</item>
+        <item>Kildare</item>
+        <item>Kilkenny</item>
+        <item>Killarney</item>
+        <item>Killester</item>
+        <item>Killiney</item>
+        <item>Lansdowne Road</item>
+        <item>Laytown</item>
+        <item>Leixlip (Confey)</item>
+        <item>Leixlip (Louisa Bridge)</item>
+        <item>Limerick</item>
+        <item>Limerick Junction</item>
+        <item>Lisburn</item>
+        <item>LittleIsland</item>
+        <item>Longford</item>
+        <item>Lurgan</item>
+        <item>M3 Parkway</item>
+        <item>Malahide</item>
+        <item>Mallow</item>
+        <item>Manulla Junction</item>
+        <item>Maynooth</item>
+        <item>Midleton</item>
+        <item>Millstreet</item>
+        <item>Monasterevin</item>
+        <item>Muine Bheag</item>
+        <item>Mullingar</item>
+        <item>Navan Road Parkway</item>
+        <item>Nenagh</item>
+        <item>Newbridge</item>
+        <item>Newry</item>
+        <item>Oranmore</item>
+        <item>Portadown</item>
+        <item>Portarlington</item>
+        <item>Portlaoise</item>
+        <item>Portmarnock</item>
+        <item>Raheny</item>
+        <item>Rathdrum</item>
+        <item>Rathmore</item>
+        <item>Roscommon</item>
+        <item>Roscrea</item>
+        <item>Rosslare Europort</item>
+        <item>Rosslare Strand</item>
+        <item>Rush and Lusk</item>
+        <item>Rushbrooke</item>
+        <item>Sallins</item>
+        <item>Salthill</item>
+        <item>Sandycove</item>
+        <item>Sandymount</item>
+        <item>Seapoint</item>
+        <item>Shankill</item>
+        <item>Sixmilebridge</item>
+        <item>Skerries</item>
+        <item>Sligo</item>
+        <item>Sutton</item>
+        <item>Sydney Parade</item>
+        <item>Tara Street</item>
+        <item>Templemore</item>
+        <item>Thomastown</item>
+        <item>Thurles</item>
+        <item>Tipperary</item>
+        <item>Tralee</item>
+        <item>Tullamore</item>
+        <item>Waterford</item>
+        <item>Wellingtonbridge</item>
+        <item>Westport</item>
+        <item>Wexford</item>
+        <item>Wicklow</item>
+        <item>Woodbrook</item>
+        <item>Woodlawn</item>
+    </string-array>
+
+</resources>

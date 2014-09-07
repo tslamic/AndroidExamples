@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding">
+
+    <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/station_data_short_list_item_icon_left"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/station_data_short_list_item_title"
+            android:layout_alignBottom="@+id/station_data_short_list_item_description"
+            android:src="@drawable/ic_action_search"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/text_medium"
+            android:id="@id/station_data_short_list_item_title"
+            android:layout_toRightOf="@+id/station_data_short_list_item_icon_left"
+            android:layout_toLeftOf="@+id/station_data_short_list_item_due"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@id/station_data_short_list_item_description"
+            android:layout_toRightOf="@+id/station_data_short_list_item_icon_left"
+            android:layout_toLeftOf="@+id/station_data_short_list_item_due"
+            android:layout_below="@+id/station_data_short_list_item_title"
+            android:singleLine="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/station_data_short_list_item_due"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/olive_green"
+            android:textStyle="bold"
+            android:text="2 min"
+            android:gravity="center"
+            android:layout_alignTop="@id/station_data_short_list_item_title"
+            android:layout_alignBottom="@id/station_data_short_list_item_description"/>
+
+</RelativeLayout>

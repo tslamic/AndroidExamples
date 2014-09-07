@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:padding="@dimen/layout_padding">
+
+        <TextView
+                style="@style/Traein.DrawerLabel"
+                android:text="@string/public_board"/>
+
+        <Button
+                style="@style/Traein.DrawerItem"
+                android:text="@string/live_feed"
+                android:onClick="onLiveFeed"/>
+
+        <TextView
+                style="@style/Traein.DrawerLabel"
+                android:text="@string/stations"/>
+
+        <Button
+                style="@style/Traein.DrawerItem"
+                android:text="@string/stations_all"
+                android:onClick="onAll"/>
+
+        <Button
+                style="@style/Traein.DrawerItem"
+                android:text="@string/stations_mainline"
+                android:onClick="onMainline"/>
+
+        <Button
+                style="@style/Traein.DrawerItem"
+                android:text="@string/stations_suburban"
+                android:onClick="onSuburb"/>
+
+        <Button
+                style="@style/Traein.DrawerItem"
+                android:text="@string/stations_dart"
+                android:onClick="onDart"/>
+
+    </LinearLayout>
+</ScrollView>

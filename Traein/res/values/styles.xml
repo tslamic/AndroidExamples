@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Traein" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/Traein.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Traein.ActionBar</item>
+    </style>
+
+    <style name="Traein.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/action_bar_background</item>
+        <item name="background">@drawable/action_bar_background</item>
+    </style>
+
+    <style name="Traein.DrawerLabel" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:background">@drawable/label_background</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Traein.DrawerItem" parent="android:TextAppearance.Widget.Button">
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/drawer_text_click</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>
